@@ -1,0 +1,16 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "number",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20180225101522",
+    "dto": "mapstruct",
+    "service": "serviceClass",
+    "entityTableName": "flight",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no"
+}

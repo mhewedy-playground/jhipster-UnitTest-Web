@@ -1,0 +1,14 @@
+version: '2'
+services:
+    jh_unittest_rest-app:
+        image: jh_unittest_rest
+        environment:
+            - SPRING_PROFILES_ACTIVE=prod,swagger
+            - SPRING_DATASOURCE_URL=jdbc:mysql://jh_unittest_rest-mysql:3306/jh_unittest_rest?useUnicode=true&characterEncoding=utf8&useSSL=false
+            - JHIPSTER_SLEEP=10 # gives time for the database to boot before the application
+        ports:
+            - 8080:8080
+    jh_unittest_rest-mysql:
+        extends:
+            file: mysql.yml
+            service: jh_unittest_rest-mysql
