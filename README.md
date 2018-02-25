@@ -1,4 +1,4 @@
-I cannot unit test the web layer using jhipster:
+I cannot unit test the web layer using jhipster ([according to spring gs guides](https://spring.io/guides/gs/testing-web/#_test_the_application)):
 
 ```
 @RunWith(SpringRunner.class)
@@ -34,7 +34,7 @@ public class FlightControllerTest {
 }
 ```
 
-The above Unit test success in case of green-field spring boot project, but fails in case of green-field spring boot-based jhipster project:
+The above Unit test success in case of green-field [spring boot project](https://github.com/mhewedy-playground/jhipster-UnitTest-Web/tree/master/springboot-no-jhipster), but fails in case of [green-field spring boot-based jhipster project](https://github.com/mhewedy-playground/jhipster-UnitTest-Web/tree/master/springboot-with-jhipster):
 
 When run Unit Test in jhispter project (springboot-with-jhipster) from FlightResource I got:
 ```
